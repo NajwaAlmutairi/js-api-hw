@@ -10,17 +10,14 @@ const resCodes = [
 ];
 
 resCodes.map(element => {
-    fetch(url + element)
-        .then((res) => {
-            console.log(res.url)
-            let div = document.createElement('div')
+    let div = document.createElement('div')
 
-            let img = document.createElement('img')
-            img.src = res.url
-            div.appendChild(img)
+    let img = document.createElement('img')
+    img.src = url + element
 
-            div.classList.add('col');
+    div.appendChild(img)
 
-            container.appendChild(div);
-        })
+    div.classList.add('col');
+
+    container.appendChild(div);
 })
