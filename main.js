@@ -13,7 +13,8 @@ resCodes.map(element => {
     let div = document.createElement('div')
 
     let img = document.createElement('img')
-    img.src = url + element
+    img.src = url + element + '.jpg'
+console.log(img.src);
 
     div.appendChild(img)
 
